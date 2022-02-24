@@ -185,7 +185,7 @@ export default {
     initCourseInfo() {
       courseApi.getCourseInfo(this.courseId)
         .then(response => {
-          this.courseWebVo=response.data.data.courseWebVo,
+            this.courseWebVo=response.data.data.courseWebVo,
             this.chapterVideoList=response.data.data.chapterVideoList,
             this.isbuy=response.data.data.isBuy
         })
